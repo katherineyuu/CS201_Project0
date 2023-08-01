@@ -1,92 +1,133 @@
-# P0-201fall23
+# Project 0: Person201
+
+## Outline
+- [Goals](#goals)
+
+# Project 0: Person201
 
 
+## Goals
 
-## Getting started
+* To create a simple Java class and modify two driver programs to demonstrate understanding of classes, methods, and instance variables.
+* To learn about running Java programs using the VSCode IDE
+* To learn about using Git for project management.
+* To create a text file that is read by a Java program
+* To learn about CompSci201 workflow for assignments: Git, Gradescope, helper hours.
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+## The 201 workflow
+Read this document about setting up VS Code, using GIT for 201, and submitting
+your work via Gradescope.
 
-## Add your files
+## Developing the classes in Project P0: Person201
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+
+When you fork and clone the project, you'll be working primarily within the src folder with .java files beginning with `Person201`. Your goal is to modify three programs/classes (`Person201.java`, `Simple201.java`, and `Person201NearbyDemo.java`) and create a new program (`Person201Closeest.java`) to generate the desired output. 
+
+
+### Run `Simple201.java` and change `Person201.java`
+
+First run the main method in `Simple201.java`, the output will be:
 
 ```
-cd existing_repo
-git remote add origin https://coursework.cs.duke.edu/201fall23/p0-201fall23.git
-git branch -M main
-git push -uf origin main
+035.99N,078.90W owen woto
+047.00N,122.39W ricardo harambee
+040.71N,073.96W julie hello
+000.00N,000.00E null null
+names: owen ricardo julie null 
 ```
 
-## Integrate with your tools
+Make changes
 
-- [ ] [Set up project integrations](https://coursework.cs.duke.edu/201fall23/p0-201fall23/-/settings/integrations)
+```
+Owen woto @ 35.9312N 79.0058W
+Ricardo harambee @ 34.6037S 58.3816W
+Gelareh affective @ 33.89S 151.2E
+Ricardo harambe
+Gelareh affective
+```
 
-## Collaborate with your team
+Now that you've done this, change the `main` method in class `Person201Driver` by creating a new `Person201` variable named s (short for Sam) with the value shown:
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Automatically merge when pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+`Person201 s = new Person201("Sam", 44.9978, -93.2650, "hello");`
 
-## Test and Deploy
+Add one `System.out.println` statement to print the value of this variable `s` so the output of running the program is as follows:
 
-Use the built-in continuous integration in GitLab.
+```
+new output
+```
+</details>
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+### Running Person201NearbyDemo and changing Data Source
+<details>
+<summary>Scanning from Another File</summary>
 
-***
+Once the `Person201` class has been updated so that `Person201Driver` generates output as shown above, you should run `Person201Scanner` to see the output below -- running the program is described after the output.
 
-# Editing this README
+```
+Owen woto @ 35.9312N 79.0058W
+Ricardo harambee @ 34.6037S 58.3816W
+Gelareh affective @ 33.89S 151.2E
+total # 3
+```
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
 
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+### Create and Run a New Java Class: **Person201Closest.java**
+<details>
+<summary>Creating and running a new class</summary>
 
-## Name
-Choose a self-explaining name for your project.
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+In the `src` folder create a new Java class named `Person201Solo` that has only a `public static void main method` that allows the program to run (the `main` method is the launch point for all Java programs when they are executed). See `Person201Driver` for details and an example of a `main` method. In the new `main` method, you should define a `Person201` object as shown below and print using `System.out.println(person)` so that the main method has two statements.
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+```
+Person201 person = new Person201("Sam", -77.846, 166.668, "cold");
+System.out.println(person);
+```
+</details>
+</details>
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+## Checklist
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+Before you submit to Gradescope, check that you've done each of the following:
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+- Modify `Person201.java` by changing code in three places.
+- Verify that running `Person201Driver.java` matches the expected output after modifying `Person201.java`
+- Add a new `Person201` object in the `Person201Driver.java` program and verify that running `Person201Driver.java` matches the expected output after modifying `Person201Driver.java`.
+- Run `Person201Scanner.java` with the data file `data/large.txt`.
+- Run `Person201Scanner.java` with a web source via a specified URL.
+- Create a new class `Person201Solo` with a `main` method that has two statements.
+- Run the program `PostPerson` to post new information and `PeopleDownloader` to get the information from a webservice.
+</details>
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+## Submission
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+You will submit the assignment on Gradescope. [Here][Using IntelliJ, Gradescope, and Git] is a document that describes the submission process in detail. 
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+You can login to https://www.gradescope.com (make sure to login with “School Credentials”), find project P0 and submit your code. **You CANNOT submit unless all your code has been pushed to your Git repository on coursework.** So, be sure to push changes often and be sure your final program is in your Git repository before you get it graded on Gradescope.
 
-## License
-For open source projects, say how it is licensed.
+You will need to resubmit your entire project on Gradescope every time after you make changes that you wish to be graded. Please take note that changes/commits on GitLab are NOT automatically synced to Gradescope.
+</details>
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+
+## Reflect
+
+After completing the coding portion, fill out the reflect form here: [P0 Reflect][P0 Reflect]
+
+## Grading
+<details>
+<summary>Click for Grading Summary</summary>
+
+Your submission will be graded by the following rubric:
+
+| Class Modified | Points |
+| ------ | ------ |
+| Person201 | 4 |
+| Person201Driver | 4 |
+| Person201Solo | 4 |
+| Webservice | 4 |
+| Reflect form | 4 |
+
+</summary>
