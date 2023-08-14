@@ -59,32 +59,19 @@ Add variable `s` after variable `c` (and before the call of `new`) in the defini
 035.93N,079.01W Owen woto
 names: claire ricardo julie Sam Owen 
 ```
-</details>
 
 ### Running Person201NearbyDemo and changing Data Source
-<details>
-<summary>Scanning from Another File</summary>
 
-Once the `Person201` class has been updated so that `Person201Driver` generates output as shown above, you should run `Person201Scanner` to see the output below -- running the program is described after the output.
+Information coming here.
 
-```
-Owen woto @ 35.9312N 79.0058W
-Ricardo harambee @ 34.6037S 58.3816W
-Gelareh affective @ 33.89S 151.2E
-total # 3
-```
 
 
 ### Create and Run a New Java Class: **Person201Farthest.java**
-<details>
+
 <summary>Creating and running a new class</summary>
 
 
 In the `src` folder create a new Java class named `Person201Farthest` that has only a `public static void main method` that allows the program to run. When run, the method should read the file `large.txt` in the `data` folder and determine the two `People201` objects that are the farthest apart. You may find the code in `Person201NearbyDemo.java` useful in reasoning about the code you write. The program should print the objects that are farthest apart among all the objects created and returned when `PersonUtilities.readFile` is called from the code you write. 
-
-</details>
-</details>
-
 
 
 ## Checklist
