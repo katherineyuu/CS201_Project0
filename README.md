@@ -1,6 +1,6 @@
 # Project 0: Person201
 
-For details and faqs, see [this document](docs/details.md), this README file has project details, but the linked document has git details, Java details, FAQ information, and more.
+For details and faqs, see [this document](docs/details.md), this README file has project details, but the linked document has git details, Java details, FAQ information, and more. The document includes information about project workflow including submitting code and analysis for grading via _Gradescope_.
 
 ## Goals
 
@@ -10,10 +10,6 @@ For details and faqs, see [this document](docs/details.md), this README file has
 * To create a text file that is read by a Java program
 * To learn about CompSci201 workflow for assignments: Git, Gradescope, helper hours.
 
-
-## The 201 workflow
-Read this document about setting up VS Code, using GIT for 201, and submitting
-your work via Gradescope.
 
 ## Developing the classes in Project P0: Person201
 
@@ -88,30 +84,20 @@ Before you submit to Gradescope, check that you've done each of the following:
 ## Submission
 
 
-You will submit the assignment on Gradescope. [Here][Using IntelliJ, Gradescope, and Git] is a document that describes the submission process in detail. 
-
-You can login to https://www.gradescope.com (make sure to login with “School Credentials”), find project P0 and submit your code. **You CANNOT submit unless all your code has been pushed to your Git repository on coursework.** So, be sure to push changes often and be sure your final program is in your Git repository before you get it graded on Gradescope.
-
-You will need to resubmit your entire project on Gradescope every time after you make changes that you wish to be graded. Please take note that changes/commits on GitLab are NOT automatically synced to Gradescope.
-</details>
-
-
 ## Reflect
 
 After completing the coding portion, fill out the reflect form here: [P0 Reflect][P0 Reflect]
 
 ## Grading
-<details>
-<summary>Click for Grading Summary</summary>
+
 
 Your submission will be graded by the following rubric:
 
 | Class Modified | Points |
 | ------ | ------ |
 | Person201 | 4 |
-| Person201Driver | 4 |
-| Person201Solo | 4 |
-| Webservice | 4 |
-| Reflect form | 4 |
+| Simple201 | 4 |
+| Person201Farthest | 4 |
+| Submitting personal data | 4 |
+| Analysis | 4 |
 
-</summary>
