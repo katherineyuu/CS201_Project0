@@ -5,7 +5,7 @@
 
 # Project 0: Person201
 
-For details and faqs, see [../docs/details.md](docs/details.md)
+For details and faqs, see [this document](docs/details.md), this README file has project details, but the linked document has git details, Java details, FAQ information, and more.
 
 ## Goals
 
