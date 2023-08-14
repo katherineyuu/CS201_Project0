@@ -5,6 +5,7 @@
 
 # Project 0: Person201
 
+For details and faqs, see [](docs/details.md)
 
 ## Goals
 
