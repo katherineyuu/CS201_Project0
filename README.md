@@ -31,31 +31,36 @@ When you fork and clone the project, you'll be working primarily within the src 
 First run the main method in `Simple201.java`, the output will be:
 
 ```
-035.99N,078.90W owen woto
-047.00N,122.39W ricardo harambee
-040.71N,073.96W julie hello
+037.80N,122.27W claire courons
+001.29S,036.82E ricardo harambee
+040.71N,073.96W julie help
 000.00N,000.00E null null
-names: owen ricardo julie null 
+names: claire ricardo julie null 
 ```
 
-Make changes
+Make changes to `Person201.java` by modifying the default constructor so the output will be:
 
 ```
-Owen woto @ 35.9312N 79.0058W
-Ricardo harambee @ 34.6037S 58.3816W
-Gelareh affective @ 33.89S 151.2E
-Ricardo harambe
-Gelareh affective
+037.80N,122.27W claire courons
+001.29S,036.82E ricardo harambee
+040.71N,073.96W julie help
+035.93N,079.01W Owen woto
+names: claire ricardo julie Owen
 ```
 
-Now that you've done this, change the `main` method in class `Person201Driver` by creating a new `Person201` variable named s (short for Sam) with the value shown:
+Now that you've done this, change the `main` method in file `Simple201.java` by creating a new `Person201` variable named `s` (short for Sam) with the value shown:
 
 `Person201 s = new Person201("Sam", 44.9978, -93.2650, "hello");`
 
-Add one `System.out.println` statement to print the value of this variable `s` so the output of running the program is as follows:
+Add variable `s` after variable `c` (and before the call of `new`) in the definition of array `people`
 
 ```
-new output
+037.80N,122.27W claire courons
+001.29S,036.82E ricardo harambee
+040.71N,073.96W julie help
+045.00N,093.27W Sam hello
+035.93N,079.01W Owen woto
+names: claire ricardo julie Sam Owen 
 ```
 </details>
 
@@ -73,17 +78,13 @@ total # 3
 ```
 
 
-### Create and Run a New Java Class: **Person201Closest.java**
+### Create and Run a New Java Class: **Person201Farthest.java**
 <details>
 <summary>Creating and running a new class</summary>
 
 
-In the `src` folder create a new Java class named `Person201Solo` that has only a `public static void main method` that allows the program to run (the `main` method is the launch point for all Java programs when they are executed). See `Person201Driver` for details and an example of a `main` method. In the new `main` method, you should define a `Person201` object as shown below and print using `System.out.println(person)` so that the main method has two statements.
+In the `src` folder create a new Java class named `Person201Farthest` that has only a `public static void main method` that allows the program to run. When run, the method should read the file `large.txt` in the `data` folder and determine the two `People201` objects that are the farthest apart. You may find the code in `Person201NearbyDemo.java` useful in reasoning about the code you write. The program should print the objects that are farthest apart among all the objects created and returned when `PersonUtilities.readFile` is called from the code you write. 
 
-```
-Person201 person = new Person201("Sam", -77.846, 166.668, "cold");
-System.out.println(person);
-```
 </details>
 </details>
 
