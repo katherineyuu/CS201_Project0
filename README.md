@@ -68,7 +68,19 @@ runs in the Analysis section.
 
 ### Create and Run a New Java Class: **Person201Farthest.java**
 
-In the `src` folder create a new Java class named `Person201Farthest` (name the file `Person201Farthest.java` that has only a `public static void main method` that allows the program to run. When run, the method should read the file `large.txt` in the `data` folder and determine the two `People201` objects that are the farthest apart. You may find the code in `Person201NearbyDemo.java` useful in reasoning about the code you write. The program should print the objects that are farthest apart among all the objects created and returned when `PersonUtilities.readFile` is called from the code you write. 
+In the `src` folder create a new Java class named `Person201Farthest` (name the file `Person201Farthest.java` that has only a `public static void main method` that allows the program to run. When run, the method should read the file `large.txt` in the `data` folder and determine the two `People201` objects that are the farthest apart. You may find the code in `Person201NearbyDemo.java` useful in reasoning about the code you write. The program should print the objects that are farthest apart among all the objects created and returned when `PersonUtilities.readFile` is called from the code you write.
+
+The `main` method you write must use the code below 
+```
+public static void main(String[] args) throws Exception {
+        String file = "data/large.txt";
+        double max = 0;
+        Person201 a = null;
+        Person201 b = null;
+        // write code here 
+        System.out.printf("farthest distance is %3.2f between %s and %s\n",max,a.getName(),b.getName());
+    }
+```
 
 
 ## Checklist
@@ -80,7 +92,7 @@ Before you submit to Gradescope, check that you've done each of the following:
 - Add a new `Person201` object in the `Person201Demo.java` program and verify that running `Person201Demo.java` matches the expected output.
 - Run `Person201NearbyDemo.java` after modifying the method `distanceFrom` in  `Person201`, and verify the results hold reading the same data 
 four different ways: a text file, an encrypted text file, and the same via URLs.
-- Create a new class `Person201Farthest` with a `main` as specified.
+- Create a new class `Person201Farthest` with a `main` method and another static method as specified.
 
 ## Submission
 
