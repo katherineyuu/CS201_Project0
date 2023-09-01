@@ -14,12 +14,12 @@ For details and faqs, see [this document](docs/details.md), this README file has
 ## Developing the classes in Project P0: Person201
 
 
-When you fork and clone the project, you'll be working primarily within the src folder with .java files beginning with `Person201`. Your goal is to modify three programs/classes (`Person201.java`, `Simple201.java`, and `Person201NearbyDemo.java`) and create a new program (`Person201Closeest.java`) to generate the desired output. 
+When you fork and clone the project, you'll be working primarily within the src folder with .java files beginning with `Person201`. Your goal is to modify three programs/classes (`Person201.java`, `Person201Demo.java`, and `Person201NearbyDemo.java`) and create a new program (`Person201Closeest.java`) to generate the desired output. 
 
 
-### Run `Simple201.java` and change `Person201.java`
+### Run `Person201Demo.java` and change `Person201.java`
 
-First run the main method in `Simple201.java`, the output will be:
+First run the main method in `Person201Demo.java`, the output will be:
 
 ```
 037.80N,122.27W claire courons
@@ -39,7 +39,7 @@ Make changes to `Person201.java` by modifying the default constructor so the out
 names: claire ricardo julie Owen
 ```
 
-Now that you've done this, change the `main` method in file `Simple201.java` by creating a new `Person201` variable named `s` (short for Sam) with the value shown:
+Now that you've done this, change the `main` method in file `Person201Demo.java` by creating a new `Person201` variable named `s` (short for Sam) with the value shown:
 
 `Person201 s = new Person201("Sam", 44.9978, -93.2650, "hello");`
 
@@ -96,7 +96,7 @@ Your submission will be graded by the following rubric:
 | Class Modified | Points |
 | ------ | ------ |
 | Person201 | 4 |
-| Simple201 | 4 |
+| Person201Demo | 4 |
 | Person201Farthest | 4 |
 | Submitting personal data | 4 |
 | Analysis | 4 |
