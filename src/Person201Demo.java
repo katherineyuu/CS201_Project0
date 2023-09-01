@@ -3,11 +3,11 @@
  * @author Owen Astrachan
  * This versions new in Fall 2023
  */
-public class Simple201 {
+public class Person201Demo {
     public static void main(String[] args) {
-        Person201 a = new Person201("owen",35.9940,-78.8986,"woto");
-        Person201 b = new Person201("ricardo",46.9994, -122.3921,"harambee");
-        Person201 c = new Person201("julie",40.7081,-73.9571,"hello");
+        Person201 a = new Person201("claire",37.8044,-122.2712,"courons");
+        Person201 b = new Person201("ricardo",-1.2921, 36.8219,"harambee");
+        Person201 c = new Person201("julie",40.7081,-73.9571,"help");
         Person201[] people = {a,b,c, new Person201()};
 
         for(Person201 p : people) {

@@ -22,6 +22,7 @@ public class Person201 {
      */
     public Person201(){
         // TODO create default constructor
+
     }
 
     /**
@@ -112,9 +113,8 @@ public class Person201 {
      * @return distance from this person to other person
      */
     public double distanceFrom(Person201 other) {
-        //return Person201Utilities.distance(myLatitude, myLongitude,
-        //                                 other.myLatitude, other.myLongitude);
-        return 100.0;
+        // TODO replace with correct distance, call Person201Utilities.distance
+        return 100;
     }
 }
 
