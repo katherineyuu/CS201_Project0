@@ -15,7 +15,7 @@ public class Person201NearbyDemo {
         String encryptedURL = "https://courses.cs.duke.edu/fall23/compsci201/data/encrypted.txt";
         String encryptKey = "DukeComputing201";
 
-        double minDistance = 50000.0;
+        double minDistance = 50.0;
 
         Person201[] people = Person201Utilities.readFile(largeFileName);
         //Person201[] people = Person201Utilities.readEncryptedFile(encryptedFileName,encryptKey);      
