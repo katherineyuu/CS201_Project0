@@ -100,9 +100,12 @@ You'll submit by pushing your code to Git and using Gradescope. Details can be f
 ## Analysis
 
 Answer all the questions here.
-You must submit data using [this form](https://forms.office.com/r/wSdMU6NrKE) -- you don't have to use your real name, though you can. Ideally
+
+**You must submit data using [this form](https://forms.office.com/r/wSdMU6NrKE).** You don't have to use your real name, though you can. Ideally
 you'll use a latitude, longitude that's relevant to you, e.g., where you grew up, went to high school, or anything. You'll need
 to use the data from this file *after submitting and grading* as a final check on your program.
+
+Questions here.
 
 ## Grading
 
@@ -116,4 +119,5 @@ Your submission will be graded by the following rubric:
 | Person201Farthest | 4 |
 | Submitting personal data | 4 |
 | Analysis | 4 |
+| Post submission run| 2 |
 
