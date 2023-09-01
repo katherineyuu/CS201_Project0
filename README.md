@@ -7,7 +7,6 @@ For details and faqs, see [this document](docs/details.md), this README file has
 * To modify a simple Java class, modify two driver programs, and create a new class to demonstrate understanding of classes, methods, and instance variables.
 * To learn about running Java programs using the VSCode IDE
 * To learn about using Git for project management.
-* To create a text file that is read by a Java program
 * To learn about CompSci201 workflow for assignments: Git, Gradescope, helper hours.
 
 
@@ -96,10 +95,14 @@ four different ways: a text file, an encrypted text file, and the same via URLs.
 
 ## Submission
 
+You'll submit by pushing your code to Git and using Gradescope. Details can be found in [the details/faq](docs/details.md).
 
 ## Analysis
 
 Answer all the questions here.
+You must submit data using [this form](https://forms.office.com/r/wSdMU6NrKE) -- you don't have to use your real name, though you can. Ideally
+you'll use a latitude, longitude that's relevant to you, e.g., where you grew up, went to high school, or anything. You'll need
+to use the data from this file *after submitting and grading* as a final check on your program.
 
 ## Grading
 
