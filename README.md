@@ -16,7 +16,7 @@ For details and faqs, see [this document](docs/details.md), the current file you
 
 ## Developing the classes in Project P0: Person201
 
-When you fork and clone the project, you'll be working primarily within the src folder with .java files beginning with `Person201`. Your goal is to modify three programs/classes (`Person201.java`, `Person201Demo.java`, and `Person201NearbyDemo.java`) and create a new program (`Person201Closeest.java`) to generate the desired output. 
+When you fork and clone the project, you'll be working primarily within the src folder with .java files beginning with `Person201`. Your goal is to modify three programs/classes (`Person201.java`, `Person201Demo.java`, and `Person201NearbyDemo.java`) and create a new program (`Person201Farthest.java`) to generate the desired output. 
 
 
 ### Run `Person201Demo.java` and change `Person201.java`
