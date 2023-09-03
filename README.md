@@ -1,3 +1,5 @@
+#**NOT READY TO FORK AND clone**
+
 # Project 0: Person201
 
 For details and faqs, see [this document](docs/details.md), this README file has project details, but the linked document has git details, Java details, FAQ information, and more. That document includes information about project workflow including submitting code and analysis for grading via _Gradescope_.
