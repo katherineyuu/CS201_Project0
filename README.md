@@ -2,6 +2,8 @@
 
 # Project 0: Person201
 
+## Obtaining Project Code and Project Details
+
 For details and faqs, see [this document](docs/details.md), this file you're reading has project details, but the linked document has git details, Java details, FAQ information, and more. That document includes information about project workflow including submitting code and analysis for grading via _Gradescope_. *Be sure to check [this document](docs/details.md) for how to use Git to obtain the project files, and workarounds if Git doesn't work yet for you.
 
 ## Goals
