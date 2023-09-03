@@ -62,7 +62,7 @@ names: claire ricardo julie Sam Owen
 
 Run the program `Person201NearbyDemo`. It reads a data file and finds all the people in the data file who are within 50 miles of someone within 50 miles of a person named Ricardo who lives near Seattle. The program prints there are no people because the method `Person201.distanceFrom` returns the value _100_ instead of the correct distance to the parameter `other`. Fix the modify of `Person201.distanceFrom` so that it calls
 `Person201Utilities.distance` and passes the right parameters to get the distance between `this` object and the parameter `other`. Then rerun
-`Person201Nearby` -- you should see data from 16 people who are within 50 miles of Ricardo.
+`Person201NearbyDemo` -- you should see data from 16 people who are within 50 miles of Ricardo.
 
 Lines 20-22 specify three data sources: a regular text file named `large` in the `data` folder, an encrypted file in the same `data` folder (line 21), and an encrypted URL (line 22). Verify by commenting out/uncommenting each line that those sources all produce the same results, e.g., 16 people within 50 miles of Ricardo. After verifying the results are the same, write a new line that reads data from the URL specified by the
 variable `largeURL`. You'll need to call the appropriate method in `Person201Utilities` to read a URL for a plain-text file. Verify that you get the same results since that URL references the same data as the file `large` in the `data` folder. You'll answer questions about these
