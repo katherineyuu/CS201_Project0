@@ -101,13 +101,19 @@ You'll submit by pushing your code to Git and using Gradescope. Details can be f
 
 ## Analysis
 
-Answer all the questions here.
+Answer all the questions here. As outlined in [this document](docs/details.md) you'll submit a PDF with your answers to Gradescope.
 
-**You must submit data using [this form](https://forms.office.com/r/wSdMU6NrKE).** You don't have to use your real name, though you can. Ideally
+1. Look at the `.equals` method in `Person201.java`. How many instance variables are used to determine if two `Person201` objects are equal?
+2. You're asked to write a method `sameName` with this method signature `public boolean sameName(Person201 other)`. This method should return `true` if and only if the `Person201` object has the same name as this `Person201` object (on which the method is called.) Write the method and submit it as the answer to this question.
+3. Look at the code in `Person201Utilities` and the methods `readFile`, `readEncryptedfile`, and `readURL`. Explain in a few sentences the similarities and differences in these methods. In your answer reference the private method `readFromScanner`.
+4. The online data for this project read via URL is encrypted. In a few sentences, why is it reasonable to have the online data encrypted?
+5. Read the abstract and the first three sections of the paper [found here](https://courses.cs.duke.edu/current/compsci201/papers/android-ios-east.pdf)[^1] Write a few sentences in which you react to this paper. 
+6. You must submit data using [this form](https://forms.office.com/r/wSdMU6NrKE).** You don't have to use your real name, though you can** . Ideally
 you'll use a latitude, longitude that's relevant to you, e.g., where you grew up, went to high school, or anything. You'll need
-to use the data from this file *after submitting and grading* as a final check on your program.
+to use the data from this file *after submitting and grading* as a final check on your program. In your analysis file, include the data you submitted via this form.
 
-Questions here.
+[^1] Liu, Haoyu, Douglas J. Leith, and Paul Patras. "Android OS Privacy Under the Loupe--A Tale from the East." arXiv preprint arXiv:2302.01890 (2023)
+
 
 ## Grading
 
