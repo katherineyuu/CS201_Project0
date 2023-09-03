@@ -60,8 +60,8 @@ names: claire ricardo julie Sam Owen
 
 ### Running Person201NearbyDemo, Modify Person201.java, and changing Data Source
 
-Run the program `Person201NearbyDemo`. It reads a data file and finds all the people in the data file who are within 50 miles of someone within 50 miles of a person named Ricardo who lives near Seattle. The program prints there are no people because the method `Person201.distanceFrom` returns the value _100_ instead of the correct distance to the parameter `other`. Fix the modify of `Person201.distanceFrom` so that it calls
-`Person201Utilities.distance` and passes the right parameters to get the distance between `this` object and the parameter `other`. Then rerun
+Run the program `Person201NearbyDemo`. It reads a data file and finds all the people in the data file who are within 50 miles of a person named Ricardo who lives near Seattle. The program prints there are no people because the method `Person201.distanceFrom` returns the value _100_ instead of the correct distance to the parameter `other`. Modify the body of `Person201.distanceFrom` so that it calls
+`Person201Utilities.distance` and passes the correct parameters to get the distance between `this` object and the parameter `other`. Then rerun
 `Person201NearbyDemo` -- you should see data from 16 people who are within 50 miles of Ricardo.
 
 Lines 20-22 specify three data sources: a regular text file named `large` in the `data` folder, an encrypted file in the same `data` folder (line 21), and an encrypted URL (line 22). Verify by commenting out/uncommenting each line that those sources all produce the same results, e.g., 16 people within 50 miles of Ricardo. After verifying the results are the same, write a new line that reads data from the URL specified by the
@@ -71,9 +71,9 @@ runs in the Analysis section.
 
 ### Create and Run a New Java Class: **Person201Farthest.java**
 
-In the `src` folder create a new Java class named `Person201Farthest` (name the file `Person201Farthest.java` that has only a `public static void main method` that allows the program to run. When run, the method should read the file `large.txt` in the `data` folder and determine the two `People201` objects that are the farthest apart. You may find the code in `Person201NearbyDemo.java` useful in reasoning about the code you write. The program should print the objects that are farthest apart among all the objects created and returned when `PersonUtilities.readFile` is called from the code you write.
+In the `src` folder create a new Java class named `Person201Farthest` (name the file `Person201Farthest.java`) that has only a `public static void main method` that allows the program to run. When run, the method should read the file `large.txt` in the `data` folder and determine the two `Person201` objects that are the farthest apart. You may find the code in `Person201NearbyDemo.java` useful in reasoning about the code you write. The program should print the objects that are farthest apart among all the objects created and returned when `PersonUtilities.readFile` is called from the code you write.
 
-The `main` method you write must use the code below 
+The `main` method you write *must* use the code below 
 ```
 public static void main(String[] args) throws Exception {
         String file = "data/large.txt";
@@ -95,7 +95,7 @@ Before you submit to Gradescope, check that you've done each of the following:
 - Add a new `Person201` object in the `Person201Demo.java` program and verify that running `Person201Demo.java` matches the expected output.
 - Run `Person201NearbyDemo.java` after modifying the method `distanceFrom` in  `Person201`, and verify the results hold reading the same data 
 four different ways: a text file, an encrypted text file, and the same via URLs.
-- Create a new class `Person201Farthest` with a `main` method and another static method as specified.
+- Create a new class `Person201Farthest` with a `main` method to find the people maximally distant from each other.
 
 ## Submission
 
@@ -106,15 +106,14 @@ You'll submit by pushing your code to Git and using Gradescope. Details can be f
 Answer all the questions here. As outlined in [this document](docs/details.md) you'll submit a PDF with your answers to Gradescope.
 
 1. Look at the `.equals` method in `Person201.java`. How many instance variables are used to determine if two `Person201` objects are equal?
-2. You're asked to write a method `sameName` with this method signature `public boolean sameName(Person201 other)`. This method should return `true` if and only if the `Person201` object has the same name as this `Person201` object (on which the method is called.) Write the method and submit it as the answer to this question.
-3. Look at the code in `Person201Utilities` and the methods `readFile`, `readEncryptedfile`, and `readURL`. Explain in a few sentences the similarities and differences in these methods. In your answer reference the private method `readFromScanner`.
-4. The online data for this project read via URL is encrypted. In a few sentences, why is it reasonable to have the online data encrypted?
-5. Read the abstract and the first three sections of the paper [found here](https://courses.cs.duke.edu/current/compsci201/papers/android-ios-east.pdf)[^1] Write a few sentences in which you react to this paper. 
-6. You must submit data using [this form](https://forms.office.com/r/wSdMU6NrKE).** You don't have to use your real name, though you can** . Ideally
+2. Suppose you're asked to write a method `sameName` in the `Person201` class with this method signature `public boolean sameName(Person201 other)`. This method should return `true` if and only if the `Person201` object `other` has the same name as this `Person201` object (on which the method is called.) Write the method and submit it as the answer to this question.
+3. You ran `Person201NearbyDemo` with four data sources: a file, an encrypted file, a URL, and encrypted URL. Why do you think some lines were commented out rather than simply retyping a single line (e.g., suppose the only definition of `Person201[] people` was what's on line 20, and that line was replaced).
+4. Look at the code in `Person201Utilities` and the methods `readFile`, `readEncryptedfile`, and `readURL`. Explain in a few sentences the similarities and differences in these methods. In your answer reference the private method `readFromScanner`.
+5. The online data for this project read via URL is encrypted. In a few sentences, why is it reasonable to have the online data encrypted?
+6. Read/Skim (this description of AES](https://techjury.net/blog/what-is-aes/) the encryption algorithm used in this project, e.g., see the code in `FileEncryptor.java`. What are two things you learned from this article that you think are relevant to your understanding of Computer Science?
+7. You must submit data using [this form](https://forms.office.com/r/wSdMU6NrKE).** You don't have to use your real name, though you can** . Ideally
 you'll use a latitude, longitude that's relevant to you, e.g., where you grew up, went to high school, or anything. You'll need
 to use the data from this file *after submitting and grading* as a final check on your program. In your analysis file, include the data you submitted via this form.
-
-[^1] Liu, Haoyu, Douglas J. Leith, and Paul Patras. "Android OS Privacy Under the Loupe--A Tale from the East." arXiv preprint arXiv:2302.01890 (2023)
 
 
 ## Grading
