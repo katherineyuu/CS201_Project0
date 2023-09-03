@@ -1,4 +1,4 @@
-#**NOT READY TO FORK AND clone**
+# NOT READY TO FORK AND CLONE
 
 # Project 0: Person201
 
