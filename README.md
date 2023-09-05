@@ -1,10 +1,10 @@
-# NOT READY TO FORK AND CLONE
-
 # Project 0: Person201
 
 ## Obtaining Project Code and Project Details
 
-For details and faqs, see [this document](docs/details.md), the current file you're reading has project details, but the linked document has git details, Java details, FAQ information, and more. That document includes information about project workflow including submitting code and analysis for grading via _Gradescope_. *Be sure to check [this document](https://coursework.cs.duke.edu/201fall23/resources-201/-/blob/main/projectWorkflow.md) for how to use Git to obtain the project files, and workarounds if Git doesn't work yet for you. You'll need to refer to this P0 document when forking and cloning.
+For details and faqs, see [this document](docs/details.md) that has information on git, Java, the classes here, and more. This current file you're reading has project and coding details, but the linked document has more Java and git details, particularly about starting to code. That linked document includes information about project workflow including submitting code and analysis for grading via _Gradescope_. *Be sure to check [this document](https://coursework.cs.duke.edu/201fall23/resources-201/-/blob/main/projectWorkflow.md) for how to use Git to obtain the project files, and workarounds if Git doesn't work yet for you. You'll need to refer to this P0 document when forking and cloning.
+
+Recall that according to class policy you should use Zoom to record the first 20 minutes you start coding -- not when you start reading, but when you're ready to code. You'll submit a URL for a cloud Zoom recording [using this link](https://bit.ly/201-p0-video).
 
 ## Goals
 
@@ -107,26 +107,27 @@ Answer all the questions here. As outlined in [this document](docs/details.md) y
 
 1. Look at the `.equals` method in `Person201.java`. How many instance variables are used to determine if two `Person201` objects are equal?
 2. Suppose you're asked to write a method `sameName` in the `Person201` class with this method signature `public boolean sameName(Person201 other)`. This method should return `true` if and only if the `Person201` object `other` has the same name as this `Person201` object (on which the method is called.) Write the method and submit it as the answer to this question.
-3. You ran `Person201NearbyDemo` with four data sources: a file, an encrypted file, a URL, and encrypted URL. Why do you think some lines were commented out rather than simply retyping a single line (e.g., suppose the only definition of `Person201[] people` was what's on line 20, and that line was replaced).
+3. You ran `Person201NearbyDemo` with four data sources: a file, an encrypted file, a URL, and encrypted URL. Why do you think some lines were commented out rather than simply retyping a single line (e.g., suppose the only definition of `Person201[] people` was what's on line 20, and that line was replaced for each run).
 4. Look at the code in `Person201Utilities` and the methods `readFile`, `readEncryptedfile`, and `readURL`. Explain in a few sentences the similarities and differences in these methods. In your answer reference the private method `readFromScanner`.
 5. The online data for this project read via URL is encrypted. In a few sentences, why is it reasonable to have the online data encrypted?
 6. Read/Skim (this description of AES](https://techjury.net/blog/what-is-aes/) the encryption algorithm used in this project, e.g., see the code in `FileEncryptor.java`. What are two things you learned from this article that you think are relevant to your understanding of Computer Science?
 7. You must submit data using [this form](https://forms.office.com/r/wSdMU6NrKE).** You don't have to use your real name, though you can** . Ideally
 you'll use a latitude, longitude that's relevant to you, e.g., where you grew up, went to high school, or anything. You'll need
 to use the data from this file *after submitting and grading* as a final check on your program. In your analysis file, include the data you submitted via this form.
+8. Course policy indicates you should submit a link to a video of you working at the beginning of this project. You should submit using [this form](https://bit.ly/201-p0-video). In your analysis document include as an answer to question 8 an affirmation "yes, I submitted the URL for a zoom recording" -- if, in fact, you did.
 
 
 ## Grading
 
+Your submission will be graded by the following chart:
 
-Your submission will be graded by the following rubric:
-
-| Class Modified | Points |
+| Project Part | Points |
 | ------ | ------ |
-| Person201 | 4 |
-| Person201Demo | 4 |
-| Person201Farthest | 4 |
-| Submitting personal data | 4 |
-| Analysis | 4 |
-| Post submission run| 2 |
+| Modify Person201 | 4 |
+| Modify Person201Demo | 4 |
+| Create Person201Farthest | 4 |
+| Submitting personal data | 2 |
+| Analysis | 8 |
+| Post submission run| 4 |
+| Zoom recording | 2 |
 
