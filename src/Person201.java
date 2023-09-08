@@ -1,6 +1,6 @@
 /**
  * For use in Compsci 201, P0, Duke University
- * @author ola, Owen Astrachan
+ * @author ola, Owen Astrachan & Katherine Yu
  * To be modified by students in 201, when you make
  * a modification, add yourself as an author in these
  * comments.
@@ -21,8 +21,10 @@ public class Person201 {
      * longitude = -79.0058
      */
     public Person201(){
-        // TODO create default constructor
-
+        myName = "Owen";
+        myPhrase = "woto";
+        myLatitude = 35.9312;
+        myLongitude = -79.0058;
     }
 
     /**
@@ -113,8 +115,7 @@ public class Person201 {
      * @return distance from this person to other person
      */
     public double distanceFrom(Person201 other) {
-        // TODO replace with correct distance, call Person201Utilities.distance
-        return 100;
+        return Person201Utilities.distance(myLatitude, myLongitude, other.getLatitude(), other.getLongitude());
     }
 }
 
